@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@maxio-com/advanced-billing-sdk": "^6.0.0",
+    "chargify-node": "0.0.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2"
   },

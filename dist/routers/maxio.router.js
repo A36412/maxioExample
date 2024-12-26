@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const maxio_controller_1 = require("../controllers/maxio.controller");
+const router = (0, express_1.Router)();
+router.post('/create-customer', maxio_controller_1.createCustomer);
+router.post('/create-organizations', maxio_controller_1.createOrganizationPipedrive);
+router.post('create-product', maxio_controller_1.createOneTimePurchaseProduct);
+router.post('create-product-family', maxio_controller_1.createProductFamily);
+router.get('/list-customer', maxio_controller_1.listCustomer);
+router.get('/get-customer', maxio_controller_1.getCustomerById);
+router.get('/get-person', maxio_controller_1.getAllPersons);
+router.get('/get-user', maxio_controller_1.listUserPipedrive);
+router.get('/get-organizations', maxio_controller_1.listOrganizationsPipedrive);
+router.put('/update-customer', maxio_controller_1.updateCustomer);
+router.delete('/delete-organizations', maxio_controller_1.deleteOrganizationsPipedrive);
+exports.default = router;
